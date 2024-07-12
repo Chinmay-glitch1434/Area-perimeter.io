@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <h1>Shape Area and Perimeter calculator</h1>
+        <h2>Square</h2>
+       <div id="sqarea">area :</div>
+        <div id="sqperimeter">perimeter :</div>
+        <input class="ibox" id="sqcal"
+               <span>
+      <button onclick="sqcalculate()">Calculate</button>
+        </span>
+       <h3>Rectangle</h3>
+       <div id="recarea">area :</div><div id="recperimeter">perimeter :</div>
+        <input class="ibox" id="reccal"     
+               <span>
+      <input class="ibox" id="reccall">
+      <button onclick="reccalculate()">Calculate</button>
+      </span>
+    <h4>Triangle<h4>
+      <div id="triarea">area :</div><div id="triperi">Perimeter :</div>
+      <input class="ibox" id="trical"
+             <span>
+      <input class="ibox" id="tricall"
+      </span>
+        <button onclick="tricalculate()">Calculate</button>
+        </span>
+      <h6>Parallelogram</h6>
+      <div id="pararea">Area :</div><div id="parperi">Perimeter :</div>
+      <input class="ibox" id="parcal"
+             <span>
+      <input class="ibox" id="paracal"
+      </span>
+     <span>
+      <button onclick="parcalculate()">Calculate</button>
+      </span>
+      <style>
+        body
+{
+  background-color: #6ce007;
+}
+.ibox
+{
+background-color: #e0dd1b;
+}
+button
+{
+  background-color: #2e9ee8; 
+}
+h1
+{
+  text-decoration: underline;
+}
+h2
+{
+  font-size: 25px
+}
+h3
+{
+  font-size: 25px;
+}
+h4
+{
+  font-size: 25px;
+}
+h5
+{
+  font-size: 25px;
+}
+h6
+{
+  font-size: 25px;
+}
+h7
+{
+  font-size: 25px;
+}
+div
+{
+  font-size: 15px;
+  font-family: Bold;
+}
+      </style>
+      <script>
+        function sqcalculate() {
+var sqarea =
+Number(document.getElementById("sqcal").value) *
+Number(document.getElementById("sqcal").value);
+document.getElementById("sqarea").innerHTML=sqarea;
+  var sqperimeter =
+ Number(document.getElementById("sqcal").value) *
+4;
+document.getElementById("sqperimeter").innerHTML=sqperimeter;
+}
+function reccalculate() {
+  var recarea =
+Number(document.getElementById("reccal").value) *
+Number(document.getElementById("reccall").value);
+document.getElementById("recarea").innerHTML=recarea;
+  var rec =     
+Number(document.getElementById("reccal").value) +
+Number(document.getElementById("reccall").value);
+  var recperimeter =
+rec * 
+2;
+document.getElementById("recperimeter").innerHTML=recperimeter;
+}
+function tricalculate() {
+var triarea =
+0.5 *
+Number(document.getElementById("tricall").value) *
+Number(document.getElementById("trical").value);
+document.getElementById("triarea").innerHTML=triarea;
+var triperi = 
+Number(document.getElementById("trical").value) +
+Number(document.getElementById("tricall").value) * 2;
+document.getElementById("triperi").innerHTML=triperi;
+} 
+function parcalculate() {
+var pararea =
+Number(document.getElementById("parcal").value) *
+Number(document.getElementById("paracal").value);
+document.getElementById("pararea").innerHTML=pararea;
+var era =
+Number(document.getElementById("parcal").value) +
+Number(document.getElementById("parcal").value);
+var par =
+Number(document.getElementById("paracal").value) +
+Number(document.getElementById("paracal").value);
+ var parperi =
+era +
+par;
+document.getElementById("parperi").innerHTML=parperi;
+}
+      </script>
+      </body>
+</body>
+</html>
